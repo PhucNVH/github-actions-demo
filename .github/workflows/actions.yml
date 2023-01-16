@@ -1,0 +1,16 @@
+name: "Github Actions"
+
+on: [push]
+
+jobs: 
+  run-github-actions:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: "simple javascript command"
+        id: hello-world
+        uses: "actions/hello-world-javascript-action@master"
+        with:
+          who-to-greet: "Phuc"
+      - name: "log time"
+        run: echo "${{ steps.hello-world.outputs.time }}"
+
