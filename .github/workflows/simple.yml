@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: "Echo hello world"
-        run: echo "Hello world!
+        run: echo "Hello world!"
       - name: "check node version"
         run: |
           node -v
