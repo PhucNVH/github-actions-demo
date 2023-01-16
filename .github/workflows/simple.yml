@@ -12,4 +12,11 @@ jobs:
         run: |
           node -v
           npm -v
+
+  python-command:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: "run python command"
+        run: "import sys; print(sys.version)"
+        shell: python 
       
