@@ -19,4 +19,13 @@ jobs:
       - name: "run python command"
         run: "import sys; print(sys.version)"
         shell: python 
+  
+  run-windows-command:
+    runs-on: windows-latest
+    steps:
+      - name: Directory Powershell
+        run: Get-Location
+      - name: get current directory
+        run: pwd
+        shell: bash
       
