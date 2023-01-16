@@ -6,6 +6,17 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-18.04
     steps:
+      - name: "listing files"
+        run: |
+                pwd
+                ls -la
+      - name: "checkout code"
+        uses: actions/checkout@v2
+
+      - name: "listing files after checkout"
+        run: |
+              pwd
+              ls -la
       - name: "simple javascript command"
         id: hello-world
         uses: "actions/hello-world-javascript-action@master"
